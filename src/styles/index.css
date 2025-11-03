@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Colours === */
+  --color-forest: #006847;
+  --color-mint: #E9F5EC;
+  --color-cream: #FAFAF9;
+  --color-accent: #F4A261;
+  --color-hover: #2D6A4F;
+  --color-neutral-light: #D1D5DB;
+  --color-neutral-dark: #4B5563;
+
+  /* === Typography === */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+}
