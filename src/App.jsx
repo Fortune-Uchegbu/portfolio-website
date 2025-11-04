@@ -2,12 +2,12 @@ import { Hero, About, Skills, Projects, Contact } from './sections';
 import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, ScrollToTop, Footer } from './components';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className='bg-forest text-cream'>
-      <Navbar />
+      <Hero />
       <main>
-        <Hero />
         <About />
         <Skills />
         <Projects />
