@@ -1,4 +1,5 @@
 import { Navbar } from "../components";
+
 const Hero = () => {
   return (
     <header>

@@ -1,26 +1,18 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* === Colours === */
   --color-forest: #006847;
-  --color-mint: #E9F5EC;
-  --color-cream: #FAFAF9;
-  --color-accent: #F4A261;
-  --color-hover: #2D6A4F;
-  --color-neutral-light: #D1D5DB;
-  --color-neutral-dark: #4B5563;
+  --color-mint: #e9f5ec;
+  --color-cream: #fafaf9;
+  --color-accent: #f4a261;
+  --color-hover: #2d6a4f;
+  --color-neutral-light: #d1d5db;
+  --color-neutral-dark: #4b5563;
 
   /* === Typography === */
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-}
-
-@layer base {
-  :root {
-    color-scheme: light;
-  }
-
-  .dark {
-    color-scheme: dark;
-  }
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 }

@@ -2,10 +2,9 @@ import { Hero, About, Skills, Projects, Contact } from './sections';
 import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, ScrollToTop, Footer } from './components';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className='bg-forest text-cream'>
+    <div className=' bg-mint text-forest dark:bg-forest dark:text-cream'>
       <Hero />
       <main>
         <About />
@@ -16,7 +15,6 @@ function App() {
       <Footer />
 
       {/* Floating */}
-      <ThemeToggle />
       <ScrollToTop />
     </div>
   )
