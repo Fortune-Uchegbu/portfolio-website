@@ -1,9 +1,9 @@
 import { Navbar } from "../components";
 
-const Hero = () => {
+const Hero = ({ width }) => {
   return (
     <header>
-      <Navbar />
+      <Navbar width = {width} />
     </header>
   )
 }

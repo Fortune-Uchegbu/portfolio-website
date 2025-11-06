@@ -29,12 +29,12 @@ const ThemeToggle = () => {
   return (
     <button 
       onClick={toggleTheme} 
-      className="p-2 rounded-full hover:bg-neutral-light hover:cursor-pointer dark:hover:bg-neutral-dark transition-colors"
+      className="p-3 rounded-full hover:bg-neutral-light hover:cursor-pointer dark:hover:bg-neutral-dark transition-colors"
       aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       {darkMode ? 
-      <MdLightMode className="w-6 h-6" /> :
-      <MdDarkMode className="w-6 h-6" />
+      <MdLightMode className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> :
+      <MdDarkMode className="w-4 h-4 sm:w-5 sm:h-5" />
       }
     </button>
   )
