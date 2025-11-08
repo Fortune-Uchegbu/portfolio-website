@@ -4,9 +4,10 @@
 
 @theme {
   /* === Colours === */
-  --color-forest: #006847;
-  --color-mint: #e9f5ec;
-  --color-cream: #fafaf9;
+  --color-pri-dark: #006847;
+  --color-pri-light: #e9f5ec;
+  --color-sec-dark: #fafaf9;
+  --color-sec-light: #006847;
   --color-accent: #f4a261;
   --color-hover: #2d6a4f;
   --color-neutral-light: #d1d5db;

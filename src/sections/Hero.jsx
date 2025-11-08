@@ -1,9 +1,13 @@
 import { Navbar } from "../components";
 
-const Hero = ({ width }) => {
+const Hero = ({ width, isOpen, setOpen }) => {
   return (
     <header>
-      <Navbar width = {width} />
+      <Navbar 
+      width = {width} 
+      isOpen = {isOpen} 
+      setOpen ={setOpen}
+      />
     </header>
   )
 }
