@@ -1,5 +1,5 @@
-import { Hero, About, Skills, Projects, Contact } from './sections';
-import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, MobileMenu, ScrollToTop, Footer } from './components';
+import { Hero, About, Skills, Projects, Contact, Footer } from './sections';
+import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, MobileMenu, ScrollToTop } from './components';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -8,18 +8,32 @@ function App() {
 
   // Load time
   useEffect(() => {
+    console.log(isOpen);
+    const menu = document.getElementById('mobileMenu');
+
     const handleResize = () => setWidth(window.innerWidth);
+    const handleClickOutside = (event) => {
+      console.log('clicked')
+    //   const menu = document.getElementById('mobileMenu');
+    //   console.log(menu)
+    //   if (menu && !menu.contains(event.target)) setIsOpen(!isOpen);
+    }
+
+    // Event listeners
+    // width change
     window.addEventListener('resize', handleResize);
+    // click outside mobile menu
+    window.addEventListener('click', (event) => {
+      if (isOpen) handleClickOutside(event);
+    })
+
+
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('click', (event) => handleClickOutside(event));
     }
   }, [])
-  
 
-  // Helper functions
-  // const pullMenu = (openState) => {
-
-  // }
 
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark'>
@@ -34,7 +48,7 @@ function App() {
       <Footer />
 
       {/* Floating */}
-      <ScrollToTop />
+
     </div>
   )
 }
