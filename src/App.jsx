@@ -1,44 +1,45 @@
 import { Hero, About, Skills, Projects, Contact, Footer } from './sections';
-import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, MobileMenu, ScrollToTop } from './components';
-import { useState, useEffect } from 'react';
+import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, MobileMenu, ScrollToTop, Overlay } from './components';
+import { useState, useEffect, useRef } from 'react';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(false);
+  const isOpenRef = useRef(isOpen);
 
   // Load time
+  // store dynamic state
+  useEffect (() => {
+    isOpenRef.current = isOpen;
+  }, [isOpen])
+
   useEffect(() => {
-    console.log(isOpen);
-    const menu = document.getElementById('mobileMenu');
-
     const handleResize = () => setWidth(window.innerWidth);
-    const handleClickOutside = (event) => {
-      console.log('clicked')
-    //   const menu = document.getElementById('mobileMenu');
-    //   console.log(menu)
-    //   if (menu && !menu.contains(event.target)) setIsOpen(!isOpen);
+    const handleOutsideClick = (event) => {
+    const menu = document.getElementById('mobileMenu');
+      if (isOpenRef.current && menu && !(menu.contains(event.target))) {
+        setIsOpen(false);
+      }
     }
-
     // Event listeners
     // width change
     window.addEventListener('resize', handleResize);
     // click outside mobile menu
-    window.addEventListener('click', (event) => {
-      if (isOpen) handleClickOutside(event);
-    })
+    window.addEventListener('click', handleOutsideClick)
 
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      window.removeEventListener('click', (event) => handleClickOutside(event));
+      window.removeEventListener('click', handleOutsideClick);
     }
   }, [])
 
 
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark'>
-      <MobileMenu isOpen = {isOpen} />
-      <Hero width = {width} isOpen = {isOpen} setOpen ={setIsOpen}/>
+      <MobileMenu isOpen = {isOpen} setOpen={setIsOpen} />
+      <Overlay isOpen={isOpen} />
+      <Hero width = {width} setOpen ={setIsOpen}/>
       <main>
         <About />
         <Skills />
