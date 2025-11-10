@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark'>
-      <MobileMenu isOpen = {isOpen} setOpen={setIsOpen} />
+      <MobileMenu isOpen = {isOpen} setOpen={setIsOpen} width={width} />
       <Overlay isOpen={isOpen} />
       <Hero width = {width} setOpen ={setIsOpen}/>
       <main>

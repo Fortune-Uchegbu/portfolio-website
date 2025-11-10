@@ -23,8 +23,7 @@ ul li {
   position: relative;
   width: min-content;
 }
-ul li::after {
-  content: "";
+ul li .underline {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -33,8 +32,7 @@ ul li::after {
   height: 2px;
   width: 100%;
   transition: transform 0.25s ease-out;
-  background-color: var(--color-sec-dark);
 }
-ul li:hover::after {
+ul li:hover .underline {
   transform: scaleX(1);
 }
