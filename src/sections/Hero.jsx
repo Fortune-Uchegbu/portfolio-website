@@ -6,12 +6,13 @@ const Hero = ({ width, setOpen, handleResumeDownload, handleSocial }) => {
   return (
     <header>
       <Navbar 
-      width = {width} 
-      setOpen ={setOpen}
-      handleResumeDownload={handleResumeDownload}
-      handleSocial = {handleSocial}
-      setHeight = {setNavheight}
+        width = {width} 
+        setOpen ={setOpen}
+        handleResumeDownload={handleResumeDownload}
+        handleSocial = {handleSocial}
+        setHeight = {setNavheight}
       />
+      
       <MainHero 
       navHeight = {navHeight}
       />

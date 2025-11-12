@@ -1,6 +1,6 @@
 import { Hero, About, Skills, Projects, Contact, Footer } from './sections';
 import { Navbar, MobileMenu } from './sections/subsections';
-import { SectionTitle ,SkillBadge, ProjectCard, ThemeToggle,  ScrollToTop, Overlay } from './components';
+import { SectionTitle ,SkillBadge, ProjectCard, ThemeToggle,  ScrollToTop, Overlay, Wrapper } from './components';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark'>
+    <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark w-full flex flex-col'>
       <MobileMenu 
       isOpen = {isOpen} 
       setOpen={setIsOpen} 

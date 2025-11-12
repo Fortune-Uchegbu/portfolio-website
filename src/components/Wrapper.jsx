@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Wrapper = ({ component }) => {
+const Wrapper = ({ classes, comp }) => {
   return (
-    <div className='w-full max-w-7xl'>
-        {component}
-    </div>
+    <section className= {`w-full max-w-[1440px] place-self-center ${classes}`}>
+        {comp}
+    </section>
   )
 }
 
