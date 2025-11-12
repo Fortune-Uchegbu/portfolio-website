@@ -1,0 +1,1 @@
+export { default as paddings } from './paddingProgression.js';

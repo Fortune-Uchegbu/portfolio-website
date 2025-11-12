@@ -1,0 +1,1 @@
+export { default as useComponentDimensions } from './GetDimensions.js';

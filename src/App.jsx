@@ -1,5 +1,6 @@
 import { Hero, About, Skills, Projects, Contact, Footer } from './sections';
-import { Navbar, SectionTitle ,SkillBadge, ProjectCard, ThemeToggle, MobileMenu, ScrollToTop, Overlay } from './components';
+import { Navbar, MobileMenu } from './sections/subsections';
+import { SectionTitle ,SkillBadge, ProjectCard, ThemeToggle,  ScrollToTop, Overlay } from './components';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {
@@ -34,12 +35,30 @@ function App() {
     }
   }, [])
 
+  // helper functions
+  const handleResumeDownload = () => {
+    console.log('Downloaded!');
+  }
+  const handleSocial = () => {
+    console.log('linked!');
+  }
 
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark'>
-      <MobileMenu isOpen = {isOpen} setOpen={setIsOpen} width={width} />
+      <MobileMenu 
+      isOpen = {isOpen} 
+      setOpen={setIsOpen} 
+      width={width} 
+      handleResumeDownload={handleResumeDownload}
+      handleSocial = {handleSocial}
+      />
       <Overlay isOpen={isOpen} />
-      <Hero width = {width} setOpen ={setIsOpen}/>
+      <Hero 
+      width = {width} 
+      setOpen ={setIsOpen}
+      handleResumeDownload={handleResumeDownload}
+      handleSocial = {handleSocial}
+      />
       <main>
         <About />
         <Skills />
