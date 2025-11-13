@@ -1,8 +1,11 @@
-import React from 'react'
-
+import { Wrapper } from '../components'
 const Skills = () => {
   return (
-    <section id="skills"></section>
+    <section id="skills">
+      <Wrapper >
+
+      </Wrapper>
+    </section>
   )
 }
 

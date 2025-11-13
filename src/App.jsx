@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark w-full flex flex-col'>
+    <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark w-full'>
       <MobileMenu 
       isOpen = {isOpen} 
       setOpen={setIsOpen} 

@@ -16,12 +16,10 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
   return (
     <nav 
     ref={ref}
-    className={`w-full `}
+    className={`w-full shadow-md`}
     >
       <Wrapper 
-      classes = {`flex items-center justify-between ${paddings.width} ${paddings.navheight}`}
-      comp = {
-        <>
+      classes = {`flex items-center justify-between ${paddings.width} ${paddings.navheight}`}>
         <NameLogo />
         {width >= 1024 ? <LinkItems /> : null}
         <div className="flex justify-between items-center gap-x-2 sm:gap-x-4">
@@ -32,9 +30,7 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
           <CTAButton call = {'Download Resume'} action ={handleResumeDownload} /> : 
           null}
         </div>
-        </>
-      }
-      />
+      </Wrapper>
     </nav>
   )
 }

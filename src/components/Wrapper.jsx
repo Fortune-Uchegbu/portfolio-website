@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Wrapper = ({ classes, comp }) => {
+const Wrapper = ({ classes, children }) => {
   return (
-    <section className= {`w-full max-w-[1440px] place-self-center ${classes}`}>
-        {comp}
+    <section className= {`w-full max-w-[1440px] mx-auto ${classes}`}>
+      {children}
     </section>
   )
 }
