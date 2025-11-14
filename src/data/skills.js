@@ -1,9 +1,6 @@
-// src/data/skills.js
-
-export const skills = [
+const skills = [
   {
-    category: "Frontend & UI Development",
-    description: "What users see and interact with — the visible craft.",
+    category: "Frontend Development",
     items: [
       { name: "HTML5", icon: null },
       { name: "CSS3", icon: null },
@@ -13,11 +10,15 @@ export const skills = [
     ],
   },
   {
-    category: "Tools & Workflow",
-    description: "Everything that makes your development process efficient.",
+    category: "Version Control",
     items: [
       { name: "Git", icon: null },
       { name: "GitHub", icon: null },
+    ],
+  },
+  {
+    category: "Development Tools & Workflow",
+    items: [
       { name: "VS Code", icon: null },
       { name: "Vite", icon: null },
       { name: "npm", icon: null },
@@ -25,23 +26,15 @@ export const skills = [
     ],
   },
   {
-    category: "Backend & API Interaction",
-    description: "How your projects talk to data sources and external services.",
-    items: [
-      { name: "Node.js", icon: null },
-      { name: "RESTful APIs", icon: null },
-      { name: "HTTP / CRUD Operations", icon: null },
-    ],
-  },
-  {
-    category: "Core Concepts & Methodologies",
-    description: "The thinking and habits that shape your coding style.",
+    category: "Core Frontend Concepts",
     items: [
       { name: "Responsive Design", icon: null },
+      { name: "State Management", icon: null },
+      { name: "RESTful API Integration", icon: null },
       { name: "Debugging & Error Handling", icon: null },
       { name: "Clean, Modular Code Structure", icon: null },
-      { name: "State Management", icon: null },
       { name: "Problem Solving", icon: null },
     ],
   },
 ];
+export default skills;

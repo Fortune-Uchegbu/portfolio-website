@@ -19,7 +19,7 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
     className={`w-full shadow-md`}
     >
       <Wrapper 
-      classes = {`flex items-center justify-between ${paddings.width} ${paddings.navheight}`}>
+      classes = {`flex items-center justify-between ${paddings.navheight}`}>
         <NameLogo />
         {width >= 1024 ? <LinkItems /> : null}
         <div className="flex justify-between items-center gap-x-2 sm:gap-x-4">

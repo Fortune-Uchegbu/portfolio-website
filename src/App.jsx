@@ -1,6 +1,6 @@
 import { Hero, About, Skills, Projects, Contact, Footer } from './sections';
 import { Navbar, MobileMenu } from './sections/subsections';
-import { SectionTitle ,SkillBadge, ProjectCard, ThemeToggle,  ScrollToTop, Overlay, Wrapper } from './components';
+import { SectionTitle, ProjectCard, ThemeToggle,  ScrollToTop, Overlay, Wrapper } from './components';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {

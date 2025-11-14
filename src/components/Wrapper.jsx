@@ -1,8 +1,8 @@
-import React from 'react'
+import { paddings } from "../styles";
 
 const Wrapper = ({ classes, children }) => {
   return (
-    <section className= {`w-full max-w-[1440px] mx-auto ${classes}`}>
+    <section className= {`w-full max-w-[1440px] mx-auto ${paddings.width} ${classes}`}>
       {children}
     </section>
   )
