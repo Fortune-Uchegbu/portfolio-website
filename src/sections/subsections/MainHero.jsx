@@ -1,4 +1,3 @@
-import { paddings } from "../../styles";
 import { Wrapper, CTAButton } from "../../components";
 
 const MainHero = ({ navHeight }) => {
