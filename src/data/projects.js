@@ -1,6 +1,5 @@
-// src/data/projects.js
 
-export const projects = [
+const projectData = [
   // ===== Pre–Vanilla JS Projects =====
   {
     title: "EduTech Landing Page",
@@ -127,3 +126,5 @@ export const projects = [
     image: null,
   },
 ];
+
+export default projectData;
