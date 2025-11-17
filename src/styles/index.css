@@ -4,13 +4,13 @@
 
 @theme {
   /* === Colours === */
-  --color-pri-dark: #006847;
-  --color-sec-dark: #fafaf9;
-  --color-pri-light: #e9f5ec;
-  --color-sec-light: #006847;
-  --color-accent: #f4a261;
+  --color-pri-dark: #181958;
+  --color-sec-dark: #e6cbbe;
+  --color-pri-light: #f5f5f5;
+  --color-sec-light: #3a3a78;
+  --color-accent: #e55b4f;
   --color-hover: #2d6a4f;
-  --color-neutral-light: #d1d5db;
+  --color-neutral-light: #dcdcdc;
   --color-neutral-dark: #4b5563;
 
   /* === Typography === */

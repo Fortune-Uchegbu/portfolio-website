@@ -12,11 +12,11 @@ const MainHero = ({ navHeight }) => {
     >
       <Wrapper 
       classes = {`flex flex-col h-full justify-center items-center gap-y-8`}>
-        <h1 className="text-4xl sm:text-6xl font-bold max-w-xl text-center">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold max-w-xl lg:max-w-2xl text-center">
         I craft thoughtful, responsive, and efficient web interfaces — turning ideas into practical realities.
         </h1>
 
-        <div className="w-full flex gap-x-2 mainhero-cta justify-center">
+        <div className="w-full flex gap-x-4 mainhero-cta justify-center">
           <CTAButton 
           call = {'See My Projects'}
           action = {() => handleCTA('#Projects')}

@@ -4,7 +4,7 @@ import { ButtonIcons } from "../components";
 
 const Socials = ({ handleSocial }) => {
   return (
-    <span className="flex gap-x-1">
+    <span className="">
         <ButtonIcons 
         handler = {() => handleSocial}
         icon = {<FaGithubSquare className="w-5 h-5 lg:w-6 lg:h-6" />}

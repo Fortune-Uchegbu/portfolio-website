@@ -12,6 +12,7 @@ export { default as CloseMenu } from './CloseMenu.jsx';
 export { default as Socials } from './Socials.jsx';
 export { default as ButtonIcons } from './ButtonIcons.jsx';
 export { default as Wrapper } from './Wrapper.jsx';
+export { default as SecHeading } from './SecHeading.jsx';
 
 
 

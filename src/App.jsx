@@ -11,6 +11,10 @@ function App() {
   // Load time
   // store dynamic state
   useEffect (() => {
+    //stop background scroll when menu is open
+    if (isOpen) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {document.body.classList.remove("overflow-y-hidden");}
     isOpenRef.current = isOpen;
   }, [isOpen])
 

@@ -1,7 +1,7 @@
-import { FaGitSquare, FaGithubSquare, FaDatabase } from "react-icons/fa";
+import { FaGitSquare, FaGithubSquare, FaDatabase, FaLightbulb } from "react-icons/fa";
 import { VscVscode, VscDebug } from "react-icons/vsc";
 import { SiVite, SiNpm } from "react-icons/si";
-import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoChrome } from "react-icons/io5";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoChrome, IoLayers } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { LuMonitorSmartphone, LuCloud } from "react-icons/lu";
 
@@ -39,8 +39,8 @@ const skillsData = [
       { name: "State Management", icon: <FaDatabase /> },
       { name: "RESTful API Integration", icon: <LuCloud /> },
       { name: "Debugging & Error Handling", icon: <VscDebug /> },
-      { name: "Clean, Modular Code Structure", icon: null },
-      { name: "Problem Solving", icon: null },
+      { name: "Clean, Modular Code Structure", icon: <IoLayers /> },
+      { name: "Problem Solving", icon: <FaLightbulb /> },
     ],
   },
 ];

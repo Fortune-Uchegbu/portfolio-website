@@ -16,13 +16,13 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
   return (
     <nav 
     ref={ref}
-    className={`w-full shadow-md`}
+    className={`w-full shadow-sm shadow-sec-light dark:shadow-sec-dark`}
     >
       <Wrapper 
       classes = {`flex items-center justify-between ${paddings.navheight}`}>
         <NameLogo />
         {width >= 1024 ? <LinkItems /> : null}
-        <div className="flex justify-between items-center gap-x-2 sm:gap-x-4">
+        <div className="flex justify-between items-center gap-x-2">
           {width < 1024 ?  null : <Socials handleSocial = {handleSocial} />}
           <ThemeToggle />
           {width < 1024 ? <MenuButton setOpen ={setOpen} /> : null}
