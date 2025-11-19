@@ -48,20 +48,19 @@ function App() {
       const nav = document.querySelector('nav');
       const scrollingDown = currentScrollY > (prevScrollY.current);
       const scrollingUp   = currentScrollY < (prevScrollY.current);
+
       if (timeOutId.current) {
         clearTimeout(timeOutId.current);
         timeOutId.current = null;
       }
       if (scrollingDown) {
-        console.log('down!, ',timeOutId.current);
         // handle scroll down
         timeOutId.current = setTimeout(() => {
           nav.classList.remove('nav-visible');
           nav.classList.add('nav-hidden');
-        }, 1500)
+        }, 1500);
       }
       if (scrollingUp) {
-        console.log('up!,',timeOutId.current);
         //handle scroll up
         nav.classList.remove('nav-hidden');
         nav.classList.add('nav-visible')

@@ -10,7 +10,7 @@ const MobileMenu = ({ isOpen, setOpen, width, handleResumeDownload, handleSocial
 
       <CloseMenu setOpen = {setOpen} />
 
-      <LinkItems width ={width} />
+      <LinkItems width ={width} setOpen={setOpen} />
 
       <div className="flex flex-col items-center gap-y-5">
         <Socials handleSocial = {handleSocial} />
