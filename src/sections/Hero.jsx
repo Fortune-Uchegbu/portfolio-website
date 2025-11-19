@@ -4,7 +4,7 @@ import { useState } from "react";
 const Hero = ({ width, setOpen, handleResumeDownload, handleSocial }) => {
   const [navHeight, setNavheight] = useState(0);
   return (
-    <header>
+    <header className="bg-pri-light dark:bg-pri-dark">
       <Navbar 
         width = {width} 
         setOpen ={setOpen}

@@ -7,6 +7,8 @@ function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(false);
   const isOpenRef = useRef(isOpen);
+  const prevScrollY = useRef(0);
+  const timeOutId = useRef(null);
 
   // Load time
   // store dynamic state
@@ -37,6 +39,39 @@ function App() {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('click', handleOutsideClick);
     }
+  }, [])
+
+  // handle nav sliding
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const nav = document.querySelector('nav');
+      const scrollingDown = currentScrollY > (prevScrollY.current);
+      const scrollingUp   = currentScrollY < (prevScrollY.current);
+      if (timeOutId.current) {
+        clearTimeout(timeOutId.current);
+        timeOutId.current = null;
+      }
+      if (scrollingDown) {
+        console.log('down!, ',timeOutId.current);
+        // handle scroll down
+        timeOutId.current = setTimeout(() => {
+          nav.classList.remove('nav-visible');
+          nav.classList.add('nav-hidden');
+        }, 1500)
+      }
+      if (scrollingUp) {
+        console.log('up!,',timeOutId.current);
+        //handle scroll up
+        nav.classList.remove('nav-hidden');
+        nav.classList.add('nav-visible')
+      }
+      prevScrollY.current = currentScrollY;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   // helper functions

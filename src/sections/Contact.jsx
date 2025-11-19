@@ -22,7 +22,7 @@ const Contact = () => {
     });
   }
   return (
-    <section id="contact" className=''>
+    <section id="contact" className='relative'>
       <Wrapper classes = {`text-center flex flex-col items-center ${paddings.secheight} gap-y-10`}>
         <SecHeading title={'Contact'} />
         <p className="text-xl">Open to job and internship opportunities. I’m also happy to collaborate on ideas or projects. Feel free to reach out to me here.</p>

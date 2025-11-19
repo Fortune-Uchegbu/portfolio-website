@@ -11,13 +11,12 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
 
   useEffect(() => {
     setHeight(dimensions.height);
-    console.log(dimensions.height)
   }, [dimensions.height, setHeight])
 
   return (
     <nav 
     ref={ref}
-    className={`w-full shadow-sm shadow-sec-light dark:shadow-sec-dark fixed top-0 left-0`}
+    className={`w-full shadow-sm bg-pri-light dark:bg-pri-dark shadow-sec-light dark:shadow-sec-dark fixed z-20 top-0 left-0`}
     >
       <Wrapper 
       classes = {`flex items-center justify-between ${paddings.navheight}`}>
