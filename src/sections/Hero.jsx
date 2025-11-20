@@ -15,6 +15,7 @@ const Hero = ({ width, setOpen, handleResumeDownload, handleSocial }) => {
       
       <MainHero 
       navHeight = {navHeight}
+      width = {width}
       />
     </header>
   )

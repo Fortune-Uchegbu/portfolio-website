@@ -77,9 +77,6 @@ function App() {
   const handleResumeDownload = () => {
     console.log('Downloaded!');
   }
-  const handleSocial = () => {
-    console.log('linked!');
-  }
 
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark w-full'>
@@ -88,14 +85,12 @@ function App() {
       setOpen={setIsOpen} 
       width={width} 
       handleResumeDownload={handleResumeDownload}
-      handleSocial = {handleSocial}
       />
       <Overlay isOpen={isOpen} />
       <Hero 
       width = {width} 
       setOpen ={setIsOpen}
       handleResumeDownload={handleResumeDownload}
-      handleSocial = {handleSocial}
       />
       <main>
         <About />
