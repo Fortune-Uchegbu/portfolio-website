@@ -5,7 +5,7 @@ import { paddings } from "../../styles";
 
 
 
-const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight }) => {
+const Navbar = ({ width, setOpen, handleSocial, setHeight }) => {
 
   const {ref, dimensions} = useComponentDimensions();
 
@@ -27,8 +27,7 @@ const Navbar = ({ width, setOpen, handleResumeDownload, handleSocial, setHeight 
           <ThemeToggle />
           {width < 1024 ? <MenuButton setOpen ={setOpen} /> : null}
           {width >= 1024 ? 
-          <CTAButton call = {'Download Resume'} action ={handleResumeDownload} /> : 
-          null}
+          <a href="public/docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a> : null}
         </div>
       </Wrapper>
     </nav>

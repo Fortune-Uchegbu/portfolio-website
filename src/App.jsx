@@ -93,7 +93,7 @@ function App() {
       handleResumeDownload={handleResumeDownload}
       />
       <main>
-        <About />
+        <About width={width} />
         <Skills />
         <Projects />
         <Contact />

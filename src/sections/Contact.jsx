@@ -30,9 +30,9 @@ const Contact = () => {
 
         <p className="text-xl">Open to exploring new roles and collaborations! I'm genuinely excited about opportunities for learning, growth, and contributing to innovative projects. Happy to connect and discuss ideas – feel free to reach out to me here.</p>
 
-        <section className="w-full flex flex-col md:flex-row gap-y-8">
+        <section className="w-full flex flex-col md:flex-row md:gap-x-10 gap-y-8">
           {/* contact card */}
-          <ul className="w-full space-y-3 ">
+          <ul className=" space-y-3 md:pt-7 px-2 grow">
             {contactData.map((data, index) => (
               <li key={index} className="hover:cursor-pointer text-xl flex gap-x-1 items-center w-full">
                 {data.icon}
