@@ -27,7 +27,7 @@ const Navbar = ({ width, setOpen, handleSocial, setHeight }) => {
           <ThemeToggle />
           {width < 1024 ? <MenuButton setOpen ={setOpen} /> : null}
           {width >= 1024 ? 
-          <a href="public/docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a> : null}
+          <a href="../../../public/docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a> : null}
         </div>
       </Wrapper>
     </nav>

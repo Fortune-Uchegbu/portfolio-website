@@ -73,24 +73,17 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // helper functions
-  const handleResumeDownload = () => {
-    console.log('Downloaded!');
-  }
-
   return (
     <div className=' bg-pri-light text-sec-light dark:bg-pri-dark dark:text-sec-dark w-full'>
       <MobileMenu 
       isOpen = {isOpen} 
       setOpen={setIsOpen} 
-      width={width} 
-      handleResumeDownload={handleResumeDownload}
+      width={width}
       />
       <Overlay isOpen={isOpen} />
       <Hero 
       width = {width} 
       setOpen ={setIsOpen}
-      handleResumeDownload={handleResumeDownload}
       />
       <main>
         <About width={width} />
