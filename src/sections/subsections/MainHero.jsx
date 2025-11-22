@@ -27,13 +27,13 @@ const MainHero = ({ navHeight, width }) => {
 
         <div className={`grid mainhero-cta place-items-center ${width < 640 ? ' grid-cols-1 grid-rows-2 gap-y-3 w-full' : ' grid-cols-2 grid-rows-1 gap-x-4 w-[60%]' }`}>
           <CTAButton 
-          classes = {'place-self-end'}
+          classes = {'place-self-end text-xl'}
           width={width}
           call = {'See My Projects'}
           action = {(e) => handleLinkTo(e, '#projects')}
           />
           <CTAButton 
-          classes = {'place-self-start'}
+          classes = {'place-self-start text-xl'}
           width={width}
           call = {'Contact Me'}
           action = {(e) => handleLinkTo(e, '#contact')}
