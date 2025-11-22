@@ -16,9 +16,9 @@ const NameLogo = () => {
   return (
     <button 
     onClick={(e) => handleLinkTo(e, "#hero")}
-    className=" hover:cursor-pointer" 
+    className=" hover:cursor-pointer text-start " 
     aria-label='Home'>
-        <span className="font-bold text-2xl">
+        <span className="font-bold text-xl md:text-2xl">
         Fortune Uchegbu
       </span>
     </button>

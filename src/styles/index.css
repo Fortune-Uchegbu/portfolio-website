@@ -4,16 +4,16 @@
 
 @theme {
   /* === Colours === */
-  /* --color-pri-dark: #181958;
-  --color-sec-dark: #e6cbbe;
+  --color-pri-dark: #281b4e;
+  --color-sec-dark: #f5f5f5;
   --color-pri-light: #f5f5f5;
   --color-sec-light: #3a3a78;
   --color-accent: #e55b4f;
   --color-hover: #2d6a4f;
   --color-neutral-light: #dcdcdc;
-  --color-neutral-dark: #4b5563; */
+  --color-neutral-dark: #4b5563;
 
-  --color-pri-dark: #281b4e;
+  /* --color-pri-dark: #281b4e;
   --color-sec-dark: #facfee;
 
   --color-pri-light: #f3d0f0;
@@ -23,7 +23,7 @@
   --color-hover: #5b2a86;
 
   --color-neutral-light: #e8e4ea;
-  --color-neutral-dark: #3c3f47;
+  --color-neutral-dark: #3c3f47; */
 
   /* === Typography === */
   --font-heading: "Poppins", sans-serif;
