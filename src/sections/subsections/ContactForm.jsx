@@ -7,7 +7,7 @@ const ContactForm = ({ formRef, handleSubmit }) => {
     ref={formRef}
     id="contact-form" 
     onSubmit={handleSubmit}>
-      <fieldset className='flex flex-col md:justify-center min-w-full items-start gap-y-3 text-xl text-start'>
+      <fieldset className='flex flex-col md:justify-center min-w-full items-start gap-y-4 text-xl text-start'>
         <legend className='mb-3 min-w-full'>You can also send me a direct mail below:</legend>
         <span className='flex flex-col gap-y-1'>
           <label className='w-fit px-1' htmlFor="name">Name:</label>
@@ -25,7 +25,7 @@ const ContactForm = ({ formRef, handleSubmit }) => {
           <label className='w-fit px-1' htmlFor="message">Message:</label>
           <textarea id='message' className='bg-sec-dark text-pri-dark px-2 py-1 rounded-md  placeholder:text-sec-light' name="message" placeholder="Message" required></textarea>
         </span>
-        <button className='font-medium px-4 py-2 bg-accent rounded-xl dark:text-sec-dark' type="submit">Send</button>
+        <button className='font-medium px-4 py-2 bg-pri-light text-sec-light dark:bg-accent-dark rounded-xl dark:text-sec-dark' type="submit">Send</button>
       </fieldset>
     </form>
 

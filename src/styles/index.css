@@ -5,12 +5,13 @@
 @theme {
   /* === Colours === */
   --color-pri-dark: #281b4e;
-  --color-sec-dark: #f5f5f5;
+  --color-sec-dark: #ffffff;
 
-  --color-pri-light: #f5f5f5;
-  --color-sec-light: #3a3a78;
+  --color-pri-light: #ffffff;
+  --color-sec-light: #281b4e;
   
-  --color-accent: #FF6F61;
+  --color-accent-dark: #f04301;
+  --color-accent-light: #281b4e;
   --color-hover: #2d6a4f;
   
   --color-neutral-light: #dcdcdc;

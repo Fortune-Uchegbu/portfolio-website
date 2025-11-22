@@ -3,8 +3,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer id="footer" className="bg-black text-sec-dark">
-      <Wrapper classes={"py-6"}>
-        <p className="text-xl text-center">© {year} Fortune Uchegbu. All rights reserved.</p>
+      <Wrapper classes={"py-3"}>
+        <p className="text-lg text-center">© {year} Fortune Uchegbu. All rights reserved.</p>
       </Wrapper>
     </footer>
   )
