@@ -6,10 +6,13 @@
   /* === Colours === */
   --color-pri-dark: #281b4e;
   --color-sec-dark: #f5f5f5;
+
   --color-pri-light: #f5f5f5;
   --color-sec-light: #3a3a78;
-  --color-accent: #e55b4f;
+  
+  --color-accent: #FF6F61;
   --color-hover: #2d6a4f;
+  
   --color-neutral-light: #dcdcdc;
   --color-neutral-dark: #4b5563;
 

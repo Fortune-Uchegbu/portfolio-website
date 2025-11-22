@@ -25,7 +25,7 @@ const ContactForm = ({ formRef, handleSubmit }) => {
           <label className='w-fit px-1' htmlFor="message">Message:</label>
           <textarea id='message' className='bg-sec-dark text-pri-dark px-2 py-1 rounded-md  placeholder:text-sec-light' name="message" placeholder="Message" required></textarea>
         </span>
-        <button className='font-medium px-4 py-2 bg-accent rounded-xl text-sec-light dark:text-sec-dark' type="submit">Send</button>
+        <button className='font-medium px-4 py-2 bg-accent rounded-xl dark:text-sec-dark' type="submit">Send</button>
       </fieldset>
     </form>
 
