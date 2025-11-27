@@ -1,3 +1,4 @@
+import { edutechImg, ecommerceImg, faqAccordionImg, tipCalculatorImg, calculatorImg, commentsSectionImg, urlShortenerImg } from "../assets/images";
 
 const projectData = [
   // ===== Pre–Vanilla JS Projects =====
@@ -8,10 +9,10 @@ const projectData = [
       "A clean, modern education technology landing page built purely with HTML and CSS. Focused on layout precision, typography, and responsive design.",
     stack: ["HTML5", "CSS3"],
     links: {
-      live: null,
-      github: null,
+      live: 'https://fortune-uchegbu.github.io/Edutech-landing-page-clone/',
+      github: 'https://github.com/Fortune-Uchegbu/Edutech-landing-page-clone',
     },
-    image: null, // Add your image path later
+    image: edutechImg, // Add your image path later
   },
 
   // ===== Vanilla JS Projects =====
@@ -25,7 +26,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: faqAccordionImg,
   },
   {
     title: "E-Commerce Product Page",
@@ -37,7 +38,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: ecommerceImg,
   },
   {
     title: "Tip Calculator App",
@@ -49,7 +50,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: tipCalculatorImg,
   },
   {
     title: "Themed Calculator",
@@ -61,7 +62,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: calculatorImg,
   },
   {
     title: "Interactive Comments Section",
@@ -73,7 +74,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: commentsSectionImg,
   },
   {
     title: "URL Shortener App",
@@ -85,7 +86,7 @@ const projectData = [
       live: null,
       github: null,
     },
-    image: null,
+    image: urlShortenerImg,
   },
 
   // ===== React Projects =====

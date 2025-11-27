@@ -1,6 +1,6 @@
 import {Wrapper, SecHeading} from '../components';
 import paddings  from '../styles/paddingProgression.js';
-import ProfileImg from "../assets/images/fortune-headshot.jpg";
+import { ProfileImg } from "../assets/images";
 
 const About = ({width}) => {
   return (
