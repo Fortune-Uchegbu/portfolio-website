@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         <ul className='flex flex-col gap-y-1.5'>
           {Object.entries(project.links).map(([key, value]) => (
             <li key={key} className='min-w-full'>
-              <span className='font-semibold'>{`${key}: `}</span>
+              <span className='font-semibold'> {`${key}: `}</span>
               <a className='hover:underline underline-offset-2' href={value} target="_blank" rel="noopener noreferrer">
                 {value}
               </a>
