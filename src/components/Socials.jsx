@@ -11,7 +11,7 @@ const Socials = () => {
         />
       </a>
         
-      <a href="https://www.linkedin.com/in/fortune-uchegbu-b25ab8289" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/fortune-uchegbu/" target="_blank" rel="noreferrer">
          <ButtonIcons
         icon = {<FaLinkedin className="w-5 h-5 lg:w-6 lg:h-6" />}
         />

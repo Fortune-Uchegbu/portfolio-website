@@ -14,7 +14,7 @@ const contactData = [
     },
     {
         name: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/fortune-uchegbu-b25ab8289',
+        link: 'https://www.linkedin.com/in/fortune-uchegbu',
         icon: <FaLinkedin className="w-5 h-5 lg:w-6 lg:h-6" />
     }
 ]
