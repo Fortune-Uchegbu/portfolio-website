@@ -9,7 +9,7 @@ const projectData = [
       "A clean, modern education technology landing page built purely with HTML and CSS. Focused on layout precision, typography, and responsive design.",
     stack: ["HTML5", "CSS3"],
     links: {
-      Live: 'https://fortune-uchegbu.github.io/Edutech-landing-page-clone/',
+      Live: 'https://edutech-landing-clone.vercel.app/',
       Github: 'https://github.com/Fortune-Uchegbu/Edutech-landing-page-clone',
     },
     image: edutechImg, // Add your image path later
