@@ -14,7 +14,7 @@ const MobileMenu = ({ isOpen, setOpen, width, handleSocial }) => {
 
       <div className="flex flex-col items-center gap-y-5">
         <Socials handleSocial = {handleSocial} />
-        <a href="../../../public/docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a>
+        <a href="docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a>
       </div>
       
     </section>
