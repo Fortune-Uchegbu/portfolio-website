@@ -2,6 +2,7 @@ import {ThemeToggle, NameLogo, LinkItems, CTAButton, Socials, MenuButton, Wrappe
 import { useComponentDimensions } from '../../customhooks';
 import { useEffect } from 'react';
 import { paddings } from "../../styles";
+import resume from "../../../public/docs/fortune-resume.pdf"
 
 
 
@@ -27,7 +28,7 @@ const Navbar = ({ width, setOpen, handleSocial, setHeight }) => {
           <ThemeToggle />
           {width < 1024 ? <MenuButton setOpen ={setOpen} /> : null}
           {width >= 1024 ? 
-          <a href="../../../public/docs/fortune-resume.pdf" download><CTAButton call = {'Download Resume'}/></a> : null}
+          <a href={resume} download><CTAButton call = {'Download Resume'}/></a> : null}
         </div>
       </Wrapper>
     </nav>
