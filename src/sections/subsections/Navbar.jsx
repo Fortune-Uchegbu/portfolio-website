@@ -28,8 +28,10 @@ const Navbar = ({ width, setOpen, handleSocial, setHeight }) => {
           {width >= 1024 ? 
           <a href="/docs/fortune-resume.pdf" download>
             <CTAButton 
+            classOne = {'text-lg'}
+            classTwo={'text-sec-dark bg-accent-light dark:bg-accent-dark hover:brightness-120 active:brightness-120'}
             call = {'Download Resume'}
-            classes={'text-lg text-sec-dark bg-accent-light dark:bg-accent-dark hover:brightness-120 active:brightness-120'}/>
+            />
           </a> : null}
         </div>
       </Wrapper>

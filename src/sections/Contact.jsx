@@ -20,11 +20,9 @@ const Contact = () => {
       'cnjrkzfsDq2QvAgqa'
     ).then(() => {
       setStatus('Email sent successfully.')
-      
       formRef.current.reset();
     }).catch((error) => {
       setStatus(`mail not sent: ${error}`)
-      
     });
   }
   return (

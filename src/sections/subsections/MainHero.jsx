@@ -27,13 +27,15 @@ const MainHero = ({ navHeight, width }) => {
 
         <div className={`grid mainhero-cta place-items-center ${width < 640 ? ' grid-cols-1 grid-rows-2 gap-y-3 w-full' : ' grid-cols-2 grid-rows-1 gap-x-4 w-[60%]' }`}>
           <CTAButton 
-          classes = {'place-self-end text-xl text-sec-dark bg-accent-light dark:bg-accent-dark hover:brightness-120 active:brightness-120'}
+          classOne = {'place-self-end text-lg'}
+          classTwo={'text-sec-dark bg-accent-light dark:bg-accent-dark hover:brightness-120 active:brightness-120'}
           width={width}
           call = {'See My Projects'}
           action = {(e) => handleLinkTo(e, '#projects')}
           />
           <CTAButton 
-          classes = {'place-self-start text-xl text-sec-light dark:text-sec-dark bg-pri-light dark:bg-pri-dark outline-2 outline-accent-light dark:outline-accent-dark hover:bg-sec-light hover:text-pri-light dark:hover:bg-accent-dark dark:hover:text-sec-dark active:bg-sec-light active:text-pri-light dark:active:bg-accent-dark dark:active:text-sec-dark'}
+          classOne = {'place-self-start text-lg'}
+          classTwo = {'text-sec-light dark:text-sec-dark bg-pri-light dark:bg-pri-dark outline-2 outline-accent-light dark:outline-accent-dark hover:bg-sec-light hover:text-pri-light dark:hover:bg-accent-dark dark:hover:text-sec-dark active:bg-sec-light active:text-pri-light dark:active:bg-accent-dark dark:active:text-sec-dark'}
           width={width}
           call = {'Contact Me'}
           action = {(e) => handleLinkTo(e, '#contact')}
