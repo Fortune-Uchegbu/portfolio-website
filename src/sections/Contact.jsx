@@ -1,29 +1,34 @@
-import {SecHeading, Wrapper} from '../components';
+import {SecHeading, Wrapper, FormStatus} from '../components';
 import  paddings  from '../styles/paddingProgression';
 import { ContactForm } from './subsections';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import contactData from '../data/contactData.jsx';
 
+
 const Contact = () => {
+  const [status, setStatus] = useState('');
+
   const formRef = useRef()
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('mailsent!')
+    setStatus('Sending...');
     emailjs.sendForm(
       'service_27e1bla',
       'template_6732ocn',
       formRef.current,
       'cnjrkzfsDq2QvAgqa'
     ).then(() => {
-      console.log('Email sent successfully');
+      setStatus('Email sent successfully.')
+      
       formRef.current.reset();
     }).catch((error) => {
-      console.error('Failed:', error);
+      setStatus(`mail not sent: ${error}`)
+      
     });
   }
   return (
-    <section id="contact" className='bg-pri-dark text-sec-dark dark:bg-pri-dark dark:text-sec-dark'>
+    <section id="contact" className='bg-pri-dark text-sec-dark dark:bg-pri-dark dark:text-sec-dark relative'>
       <Wrapper classes = {`text-center flex flex-col items-center ${paddings.secheight} gap-y-10`}>
 
         <SecHeading title={'Contact'} />
@@ -44,6 +49,10 @@ const Contact = () => {
           <ContactForm 
           formRef = {formRef}
           handleSubmit={handleSubmit}/>
+
+          <FormStatus 
+          status = {status}
+          />
         </section>
         
       </Wrapper>

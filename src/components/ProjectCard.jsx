@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
         <p>
           <span className='font-semibold'>Stack: </span>
           {project.stack.join(', ')}
-          </p>
+        </p>
         <ul className='flex flex-col gap-y-1.5'>
           {Object.entries(project.links).map(([key, value]) => (
             <li key={key} className='min-w-full'>
